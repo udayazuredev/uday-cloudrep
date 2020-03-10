@@ -1,0 +1,136 @@
+Uday Kiran A@DESKTOP-SGBF1BG MINGW64 /d/AZURE
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Uday Kiran A@DESKTOP-SGBF1BG MINGW64 /d/AZURE
+$ git init
+Initialized empty Git repository in D:/AZURE/.git/
+
+Uday Kiran A@DESKTOP-SGBF1BG MINGW64 /d/AZURE (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Softwares/
+        mongodb commands.txt
+        uday-cloud.html
+        uday/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Uday Kiran A@DESKTOP-SGBF1BG MINGW64 /d/AZURE (master)
+$ git add uday
+uday/            uday-cloud.html
+
+Uday Kiran A@DESKTOP-SGBF1BG MINGW64 /d/AZURE (master)
+$ git add uday-cloud.html
+
+Uday Kiran A@DESKTOP-SGBF1BG MINGW64 /d/AZURE (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   uday-cloud.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Softwares/
+        mongodb commands.txt
+        uday/
+
+
+Uday Kiran A@DESKTOP-SGBF1BG MINGW64 /d/AZURE (master)
+$ git commit -m "uday-cloudrep file added"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Uday Kiran A@DESKTOP-SGBF1BG.(none)')
+
+Uday Kiran A@DESKTOP-SGBF1BG MINGW64 /d/AZURE (master)
+$ git config --global user.email "udayazuredev@gmail.com"
+
+Uday Kiran A@DESKTOP-SGBF1BG MINGW64 /d/AZURE (master)
+$ git config --global user.name "udayazuredev"
+
+Uday Kiran A@DESKTOP-SGBF1BG MINGW64 /d/AZURE (master)
+$ git commit -m "uday-cloudrep file added"
+[master (root-commit) aae19dc] uday-cloudrep file added
+ 1 file changed, 24 insertions(+)
+ create mode 100644 uday-cloud.html
+
+Uday Kiran A@DESKTOP-SGBF1BG MINGW64 /d/AZURE (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Softwares/
+        mongodb commands.txt
+        uday/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Uday Kiran A@DESKTOP-SGBF1BG MINGW64 /d/AZURE (master)
+$ git remote add origin https://github.com/udayazuredev/uday-cloudrep.git
+
+Uday Kiran A@DESKTOP-SGBF1BG MINGW64 /d/AZURE (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Softwares/
+        mongodb commands.txt
+        uday/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Uday Kiran A@DESKTOP-SGBF1BG MINGW64 /d/AZURE (master)
+$ git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 461 bytes | 461.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/udayazuredev/uday-cloudrep.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Uday Kiran A@DESKTOP-SGBF1BG MINGW64 /d/AZURE (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Softwares/
+        mongodb commands.txt
+        uday/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Uday Kiran A@DESKTOP-SGBF1BG MINGW64 /d/AZURE (master)
+$ git push -u origin master
+Everything up-to-date
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Uday Kiran A@DESKTOP-SGBF1BG MINGW64 /d/AZURE (master)
+$ git branch
+* master
+
+Uday Kiran A@DESKTOP-SGBF1BG MINGW64 /d/AZURE (master)
+$
